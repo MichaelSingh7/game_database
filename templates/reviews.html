@@ -1,0 +1,14 @@
+<html>
+      <head>
+
+      </head>
+      <body>
+           {% for review in reviews %}
+              {{review.genre_name}}
+              {{review.review_name}}
+              {{review.review_content}}
+              {{review.is_urgent}}
+              {{review.review_date}}
+           {% endfor %}
+      </body>
+</html>              
