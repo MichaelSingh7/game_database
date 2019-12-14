@@ -1,8 +1,5 @@
-<html>
-      <head>
-
-      </head>
-      <body>
+{% extends 'base.html'%}
+{% block content %} 
            {% for review in reviews %}
               {{review.genre_name}}
               {{review.review_name}}
@@ -10,5 +7,5 @@
               {{review.is_urgent}}
               {{review.review_date}}
            {% endfor %}
-      </body>
-</html>              
+{% endblock  %} 
+       
