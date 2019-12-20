@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% block content %}
+
+<h3> Add Review</h3>
+<div class="row">
+     <form action="" method="POST" class="col s12">
+        <div class="row">
+            <div class="input-field col s12">
+                 <i class="material-icons prefix">assignment</i>
+                 <input id="game_genre" type="game_genre" class="validate">
+                 <label for ="icon_prefix">Genre</label>    
+            </div>
+        <div class="input-field col s12">
+             <i class="material-icons prefix">subject</i>
+             <textarea name="review_content" id="review_content" class="materialize-textarea"></textarea>
+             <label for="icon_telephone">Game</label>           
+        </div>
+    </div>   
+</form>      
+</div>  
+
+{% endblock %}
