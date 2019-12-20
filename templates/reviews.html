@@ -1,27 +1,26 @@
 {% extends 'base.html'%}
-{% block content %} 
-           {% for review in reviews %}
-              {{review.genre_name}}
-              {{review.review_name}}
-              {{review.review_content}}
-              {{review.is_urgent}}
-              {{review.review_date}}
-           {% endfor %}
+{% block content %}
+{% for review in reviews %}
+{{review.genre_name}}
+{{review.review_name}}
+{{review.review_content}}
+{{review.is_urgent}}
+{{review.review_date}}
+{% endfor %}
 
 
-           <ul class="collapsible" data-collapse="accordion">
-               <li>
-                   <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                   <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-               </li>
-               <li>
-                   <div class="collapsible-header"><i class="material-icons">place</i>second</div>
-                   <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-               </li>
-               <li>
-                   <div class="collapsible-header"><i class="material-icons">whatshot</i>third</div>
-                   <div class="collapsible-body"><span> Lorem ipsum dolor sit amet.</span></div>
-               </li>
-               </ul>
-             {% endblock  %} 
-       
+<ul class="collapsible" data-collapse="accordion">
+	<li>
+		<div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+		<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+	</li>
+	<li>
+		<div class="collapsible-header"><i class="material-icons">place</i>second</div>
+		<div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+	</li>
+	<li>
+		<div class="collapsible-header"><i class="material-icons">whatshot</i>third</div>
+		<div class="collapsible-body"><span> Lorem ipsum dolor sit amet.</span></div>
+	</li>
+</ul>
+{% endblock  %}
