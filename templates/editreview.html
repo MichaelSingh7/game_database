@@ -6,26 +6,30 @@
           <div class="row">
                <div class="input-field col s12">
                <i class="material-icons prefix">poll</i>
-                   <select id="genre" name="genre_name">
+                   <select id="genre" name="game_genre">
                     <option value="" disabled selected>Select Genre</option>
                     {% for name in genre %}
+                         {% if name.genre_name == review.genre_name%}
+                         <option value="{{name.game_genre}}" selected >{{name.game_genre}}</option>
+                         {% else %}
                         <option value="{{name.game_genre}}">{{name.game_genre}}</option>
-                    {% endfor %}
-                   </select>
+                        {% endif %}
+                        {% endfor %}
+                      </select>   
                    <label>Game Genre</label>
                </div>
             </div>
             <div class="row">
                  <div class="input-field col s12">
                      <i class="material-icons prefix">assignment</i>
-                     <input id="review_name" name="review_name" type="text" class="validate">
+                     <input id="review_name" name="review_name" type="text" class="validate" value="{{review.review_name}}">
                      <label for ="icon_prefix">Game Title</label>    
                  </div>
                  </div>
         <div class="row">
         <div class="input-field col s12">
              <i class="material-icons prefix">subject</i>
-             <textarea name="review_content" id="review_content" class="materialize-textarea"></textarea>
+             <textarea name="review_content" id="review_content" class="materialize-textarea">{{review.review_content}}</textarea>
              <label for="icon_telephone">Review</label>           
         </div>
     </div>   

@@ -32,13 +32,13 @@ def insert_review():
     return redirect(url_for('get_reviews'))                   
 
 
-@app.route('/edit_review/<review_id')
+@app.route('/edit_review/<review_id>')
 def edit_review(review_id):
-    _review = mongo.db.reviews.find_one({"_id: ObjectId(review_id)})
+    _review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     _genre = mongo.db.genre.find()
     genre_list = [genre for genre in _genre]
     return render_template('editreview.html',
-                           reviews=_review, genre=genre_list)
+                           review=_review, genre=genre_list)
 
 
 if __name__ == '__main__':

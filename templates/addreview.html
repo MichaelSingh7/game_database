@@ -6,7 +6,7 @@
           <div class="row">
                <div class="input-field col s12">
                <i class="material-icons prefix">poll</i>
-                   <select id="genre" name="genre_name">
+                   <select id="genre" name="game_genre">
                     <option value="" disabled selected>Select Genre</option>
                     {% for name in genre %}
                         <option value="{{name.game_genre}}">{{name.game_genre}}</option>
@@ -18,7 +18,7 @@
             <div class="row">
                  <div class="input-field col s12">
                      <i class="material-icons prefix">assignment</i>
-                     <input id="review_name" name="review_name" type="text" class="validate">
+                     <input id="review_name" name="game_genre" type="text" class="validate">
                      <label for ="icon_prefix">Game Title</label>    
                  </div>
                  </div>
