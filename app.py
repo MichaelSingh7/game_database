@@ -20,7 +20,8 @@ def get_reviews():
 
 @app.route('/add_review')
 def add_review():
-    return render_template('addreview.html')  
+    return render_template('addreview.html',
+                           genre=mongo.db.genre.find())
 
 
 if __name__ == '__main__':

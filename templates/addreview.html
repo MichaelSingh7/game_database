@@ -3,18 +3,47 @@
 <h3> Add Review</h3>
 <div class="row">
      <form action="" method="POST" class="col s12">
-        <div class="row">
-            <div class="input-field col s12">
-                 <i class="material-icons prefix">assignment</i>
-                 <input id="game_genre" type="game_genre" class="validate">
-                 <label for ="icon_prefix">Genre</label>    
+          <div class="row">
+               <div class="input-field col s12">
+               <i class="material-icons prefix">poll</i>
+                   <select id="genre" name="genre_name">
+                    <option value="" disabled selected>Select Genre</option>
+                    {% for name in genre %}
+                        <option value="{{name.game_genre}}">{{name.game_genre}}</option>
+                    {% endfor %}
+                   </select>
+                   <label>Game Genre</label>
+               </div>
             </div>
+            <div class="row">
+                 <div class="input-field col s12">
+                     <i class="material-icons prefix">assignment</i>
+                     <input id="game_genre" name="game_genre" type="text" class="validate">
+                     <label for ="icon_prefix">Genre</label>    
+                 </div>
+                 </div>
+        <div class="row">
         <div class="input-field col s12">
              <i class="material-icons prefix">subject</i>
              <textarea name="review_content" id="review_content" class="materialize-textarea"></textarea>
              <label for="icon_telephone">Game</label>           
         </div>
     </div>   
+    <div class="row">
+    <div class="input-field col s12" id="matfix">  
+         <i class="material-icons prefix">assignment</i>
+         <input id="review_date" name="review_date" type="text" class="datepicker">
+         <label for="icon_prefix">Review Date</label>
+    </div>
+    </div>     
+    <div class="row">
+        <div class="switch">
+             <label>
+               <input type="checkbox">
+               <span class="lever"></span>
+    
+             </label>  
+        </div>
 </form>      
 </div>  
 
