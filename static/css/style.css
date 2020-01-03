@@ -1,0 +1,24 @@
+body{
+    background-color: grey;
+}
+
+.btn_small{
+    height:24px;
+    width:156px;
+    line-height:24px;
+    margin:5px 5px;
+    padding: 0 0.5em;
+    border-radius: 15px;
+    background-color: black;
+    
+}
+
+.btn_small:hover {
+  background-color: white;
+  color: black;
+  
+}
+
+.task_header{
+    margin-top: 5px;
+}
