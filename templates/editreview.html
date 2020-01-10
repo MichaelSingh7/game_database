@@ -1,5 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
+
+{{ review }}
 <h3> Edit Review</h3>
 <div class="row">
      <form action="{{url_for('insert_review') }}" method="POST" class="col s12">
@@ -9,7 +11,7 @@
                    <select id="genre" name="game_genre">
                     <option value="" disabled selected>Select Genre</option>
                     {% for name in genre %}
-                         {% if name.genre_name == review.genre_name%}
+                         {% if name.game_genre == review.genre_name %}
                          <option value="{{name.game_genre}}" selected >{{name.game_genre}}</option>
                          {% else %}
                         <option value="{{name.game_genre}}">{{name.game_genre}}</option>
@@ -55,5 +57,15 @@
          </button>      
 </form>      
 </div>  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+          due_date = Date.parse('{{review.review_date}}');
+          $('#review_date').pickadate('picker').set('select', due_date, { format: 'dd/mm/yyyy' }).trigger('change')
+
+      });
+
+</script>
 
 {% endblock %}
