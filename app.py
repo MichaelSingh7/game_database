@@ -41,7 +41,19 @@ def edit_review(review_id):
                            review=_review, genre=genre_list)
 
 
-if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
-            port=int(os.environ.get('PORT')),
-            debug=True)
+@app.route('/update_review/<review_id>', methods=["POST"])
+def update_review(review_id):
+    reviews = mongo.db.reviews
+    reviews.update({'_id': ObjectId('review_id')},
+                   {
+                     'review_name': request.form.get('review_name'),
+                     'genre_name': request.form.get('genre_name'),
+                     'review_content': request.form.get('review_content'),
+                     'review_date': request.form.get('review_date'),
+                     'is_urgent': request.form.get('is_urgent')
+    })
+    return redirect(url_for('get_reviews'))
+
+    if __name__ == '__main__':
+        app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')),
+                debug=True)
