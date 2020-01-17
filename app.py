@@ -55,7 +55,7 @@ def update_review(review_id):
     return redirect(url_for('get_reviews'))
 
 
-@app.route('/delete_review/<review_id>')   
+@app.route('/delete_review/<review_id>') 
 def delete_review(review_id):
     mongo.db.reviews.remove({"_id": ObjectId(review_id)})
     return redirect(url_for('get_reviews'))
@@ -64,7 +64,7 @@ def delete_review(review_id):
 @app.route('/get_genre')
 def get_genre():
     return render_template('genre.html',
-                           genre=mongo.db.genre.find()) 
+                           genre=mongo.db.genre.find())
 
 
 if __name__ == '__main__':
