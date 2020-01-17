@@ -28,7 +28,7 @@ def add_review():
 @app.route('/insert_review', methods=['POST'])   
 def insert_review():
     review = mongo.db.reviews
-    review.insert_one(request.form.to_dict()) 
+    review.insert_one(request.form.to_dict())
     return redirect(url_for('get_reviews'))                   
 
 
@@ -54,6 +54,19 @@ def update_review(review_id):
     })
     return redirect(url_for('get_reviews'))
 
-    if __name__ == '__main__':
-        app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')),
-                debug=True)
+
+@app.route('/delete_review/<review_id>')   
+def delete_review(review_id):
+    mongo.db.reviews.remove({"_id": ObjectId(review_id)})
+    return redirect(url_for('get_reviews'))
+
+
+@app.route('/get_genre')
+def get_genre():
+    return render_template('genre.html',
+                           genre=mongo.db.genre.find()) 
+
+
+if __name__ == '__main__':
+    app.run(host=os.environ.get('IP'),
+            port=int(os.environ.get('PORT')), debug=True)
