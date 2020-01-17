@@ -67,6 +67,20 @@ def get_genre():
                            genre=mongo.db.genre.find())
 
 
+@app.route('/edit_genre/<genre_id>')
+def edit_genre(genre_id):
+    return render_template('editgenre.html',)
+    genre = mongo.db.genre.find_one
+    ({'_id': ObjectId(genre_id)}))
+
+
+@app.route('/update_genre/<genre_id>', method = ['POST'])
+def update_genre(genre_id):
+    mongo.db.genre.update(
+    {'_id: ObjectId(genre_id)},
+    {'game_genre': request.form.get['game_genre']})               
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')), debug=True)
