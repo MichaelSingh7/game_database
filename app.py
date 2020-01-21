@@ -69,16 +69,17 @@ def get_genre():
 
 @app.route('/edit_genre/<genre_id>')
 def edit_genre(genre_id):
-    return render_template('editgenre.html',)
-    genre = mongo.db.genre.find_one
-    ({'_id': ObjectId(genre_id)}))
+    return render_template('editgenre.html',
+                           genre=mongo.db.genre.find_one(
+                                {'_id': ObjectId(genre_id)}))
 
 
-@app.route('/update_genre/<genre_id>', method = ['POST'])
+@app.route('/update_genre/<genre_id>', method=['POST'])
 def update_genre(genre_id):
     mongo.db.genre.update(
-    {'_id: ObjectId(genre_id)},
-    {'game_genre': request.form.get['game_genre']})               
+                          {'_id: ObjectId(genre_id)},
+                          {'genre_name': request.form.get('genre_name')})
+    return redirect(url_for('get_genre'))   
 
 
 if __name__ == '__main__':
