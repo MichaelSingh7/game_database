@@ -74,12 +74,12 @@ def edit_genre(genre_id):
                                 {'_id': ObjectId(genre_id)}))
 
 
-@app.route('/update_genre/<genre_id>', method=['POST'])
+@app.route('/update_genre/<genre_id>', methods=['POST'])
 def update_genre(genre_id):
     mongo.db.genre.update(
-                          {'_id: ObjectId(genre_id)},
-                          {'genre_name': request.form.get('genre_name')})
-    return redirect(url_for('get_genre'))   
+        {'_id': ObjectId(genre_id)},
+        {'genre_name': request.form.get('genre_name')})
+    return redirect(url_for('get_genre'))  
 
 
 if __name__ == '__main__':
