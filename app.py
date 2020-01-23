@@ -25,11 +25,11 @@ def add_review():
                            genre=mongo.db.genre.find())
 
 
-@app.route('/insert_review', methods=['POST'])   
+@app.route('/insert_review', methods=['POST']) 
 def insert_review():
     review = mongo.db.reviews
     review.insert_one(request.form.to_dict())
-    return redirect(url_for('get_reviews'))                   
+    return redirect(url_for('get_reviews'))               
 
 
 @app.route('/edit_review/<review_id>')
@@ -78,7 +78,7 @@ def edit_genre(genre_id):
 def update_genre(genre_id):
     mongo.db.genre.update(
         {'_id': ObjectId(genre_id)},
-        {'genre_name': request.form.get('genre_name')})
+        {'game_genre': request.form.get('game_genre')})
     return redirect(url_for('get_genre'))  
 
 

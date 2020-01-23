@@ -4,11 +4,11 @@
 
 <h3> Edit Genre</h3>
 <div class="row">
-     <form action="{{url_for('insert_review') }}" method="POST" class="col s12">
+     <form action="{{ url_for('update_genre', genre_id=genre._id) }}" method="POST" class="col s12">
           <div class="row">
                <div class="input-field col s12">
                <i class="material-icons prefix">poll</i>
-                   <input id="genre_name" name="genre_name" type="text" class="validate" value="{{genre.genre_name}}">
+                   <input id="game_genre" name="game_genre" type="text" class="validate" value="{{genre.game_genre}}">
                    <label for="icon_prefix">Genre</label>
                </div>
             </div>
@@ -19,14 +19,6 @@
 </form>      
 </div>  
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
-      $(document).ready(function(){
-          due_date = Date.parse('{{review.review_date}}');
-          $('#review_date').pickadate('picker').set('select', due_date, { format: 'dd/mm/yyyy' }).trigger('change')
 
-      });
-
-</script>
 
 {% endblock %}
