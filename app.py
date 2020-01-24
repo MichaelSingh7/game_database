@@ -29,16 +29,15 @@ def add_review():
 def insert_review():
     review = mongo.db.reviews
     review.insert_one(request.form.to_dict())
-    return redirect(url_for('get_reviews'))            
+    return redirect(url_for('get_reviews'))        
 
 
 @app.route('/edit_review/<review_id>')
 def edit_review(review_id):
-    _review = mongo.db.reviews.find_one({'_id': ObjectId(review_id)})
+    _review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
     _genre = mongo.db.genre.find()
-    genre_list = [genre for genre in _genre]
     return render_template('editreview.html',
-                           review=_review, genre=genre_list)
+                           review=_review, genre=_genre)
 
 
 @app.route('/update_review/<review_id>', methods=["POST"])

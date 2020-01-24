@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
 
-
+{{review}}
 <h3> Edit Review</h3>
 <div class="row">
      <form action="{{ url_for('update_review', review_id=review._id) }}" method="POST" class="col s12">
@@ -11,7 +11,7 @@
                    <select id="genre" name="game_genre">
                     <option value="" disabled selected>Select Genre</option>
                     {% for name in genre %}
-                         {% if name.game_genre == review.genre_name %}
+                         {% if name.game_genre == review.game_genre %}
                          <option value="{{name.game_genre}}" selected >{{name.game_genre}}</option>
                          {% else %}
                         <option value="{{name.game_genre}}">{{name.game_genre}}</option>
