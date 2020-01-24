@@ -25,16 +25,16 @@ def add_review():
                            genre=mongo.db.genre.find())
 
 
-@app.route('/insert_review', methods=['POST']) 
+@app.route('/insert_review', methods=['POST'])
 def insert_review():
     review = mongo.db.reviews
     review.insert_one(request.form.to_dict())
-    return redirect(url_for('get_reviews'))               
+    return redirect(url_for('get_reviews'))            
 
 
 @app.route('/edit_review/<review_id>')
 def edit_review(review_id):
-    _review = mongo.db.reviews.find_one({"_id": ObjectId(review_id)})
+    _review = mongo.db.reviews.find_one({'_id': ObjectId(review_id)})
     _genre = mongo.db.genre.find()
     genre_list = [genre for genre in _genre]
     return render_template('editreview.html',
@@ -44,10 +44,10 @@ def edit_review(review_id):
 @app.route('/update_review/<review_id>', methods=["POST"])
 def update_review(review_id):
     reviews = mongo.db.reviews
-    reviews.update({'_id': ObjectId('review_id')},
+    reviews.update({'_id': ObjectId(review_id)},
                    {
                      'review_name': request.form.get('review_name'),
-                     'genre_name': request.form.get('genre_name'),
+                     'game_genre': request.form.get('game_genre'),
                      'review_content': request.form.get('review_content'),
                      'review_date': request.form.get('review_date'),
                      'is_urgent': request.form.get('is_urgent')
@@ -55,9 +55,9 @@ def update_review(review_id):
     return redirect(url_for('get_reviews'))
 
 
-@app.route('/delete_review/<review_id>') 
+@app.route('/delete_review/<review_id>')
 def delete_review(review_id):
-    mongo.db.reviews.remove({"_id": ObjectId(review_id)})
+    mongo.db.reviews.remove({'_id': ObjectId(review_id)})
     return redirect(url_for('get_reviews'))
 
 
@@ -79,7 +79,7 @@ def update_genre(genre_id):
     mongo.db.genre.update(
         {'_id': ObjectId(genre_id)},
         {'game_genre': request.form.get('game_genre')})
-    return redirect(url_for('get_genre'))  
+    return redirect(url_for('get_genre'))
 
 
 if __name__ == '__main__':
