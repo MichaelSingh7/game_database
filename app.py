@@ -29,7 +29,7 @@ def add_review():
 def insert_review():
     review = mongo.db.reviews
     review.insert_one(request.form.to_dict())
-    return redirect(url_for('get_reviews'))        
+    return redirect(url_for('get_reviews'))    
 
 
 @app.route('/edit_review/<review_id>')
@@ -45,8 +45,8 @@ def update_review(review_id):
     reviews = mongo.db.reviews
     reviews.update({'_id': ObjectId(review_id)},
                    {
-                     'review_name': request.form.get('review_name'),
                      'game_genre': request.form.get('game_genre'),
+                     'review_name': request.form.get('review_name'),
                      'review_content': request.form.get('review_content'),
                      'review_date': request.form.get('review_date'),
                      'is_urgent': request.form.get('is_urgent')
@@ -71,6 +71,12 @@ def edit_genre(genre_id):
     return render_template('editgenre.html',
                            genre=mongo.db.genre.find_one(
                                 {'_id': ObjectId(genre_id)}))
+
+
+@app.route('/delete_genre/<genre_id>')
+def delete_genre(genre_id):
+    mongo.db.genre.remove({'_id': ObjectId(genre_id)})
+    return redirect(url_for('get_genre'))
 
 
 @app.route('/update_genre/<genre_id>', methods=['POST'])
