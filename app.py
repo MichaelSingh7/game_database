@@ -87,6 +87,18 @@ def update_genre(genre_id):
     return redirect(url_for('get_genre'))
 
 
+@app.route('/insert_genre', methods=['POST'])
+def insert_genre():
+    genre_doc = {'game_genre': request.form.get('game_genre')}
+    mongo.db.genre.insert_one(genre_doc)
+    return redirect(url_for('get_genre'))
+
+
+@app.route('/new_genre')
+def new_genre():
+    return render_template('addgenre.html')
+
+
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
             port=int(os.environ.get('PORT')), debug=True)
