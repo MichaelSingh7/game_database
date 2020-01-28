@@ -22,3 +22,22 @@ body{
 .task_header{
     margin-top: 5px;
 }
+
+.nav-wrapper{
+    position: relative;
+    height: 100%;
+    background-color: black;
+}
+
+.bg{
+    /* The image used */
+  background-image: url("static/images/game.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
