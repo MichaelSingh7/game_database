@@ -1,5 +1,15 @@
 body{
     background-color: white;
+    /* The image used */
+    background-image: url("../images/game.jpg");
+
+    /* Full height */
+    min-height: 100vh;    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .btn_small{
@@ -31,10 +41,10 @@ body{
 
 .bg{
     /* The image used */
-  background-image: url("static/images/game.jpg");
+  background-image: url("../images/game.jpg");
 
   /* Full height */
-  height: 100%; 
+  
 
   /* Center and scale the image nicely */
   background-position: center;
