@@ -6,12 +6,50 @@ body{
     /* Full height */
     min-height: 100vh;    
     /* Center and scale the image nicely */
-    background-position: center;
+    background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
+nav .brand-logo{
+position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 0;
+}
+
+nav .brand-logo.right{
+right: 2.5rem;
+    padding: 0;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 38px;
+    line-height: 64px;
+}
+.container{
+    padding-top: 30px;
+    padding-right: 206px;
+}
+
+.container .row{
+    margin-left: -.75rem;
+    margin-right: 1.25rem;
+}
+
+.collapsible-body{
+    color:white;
+}
+
+.collapsible-header{
+    background-color: black;
+}
+
+.task-header{
+    color: white;
+}
 .btn_small{
     height:24px;
     width:156px;
@@ -22,6 +60,7 @@ body{
     background-color: black;
     
 }
+
 
 .btn_small:hover {
   background-color: red;
