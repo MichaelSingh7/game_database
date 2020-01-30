@@ -29,6 +29,11 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     height: 38px;
     line-height: 64px;
 }
+
+.row{
+    color:white;
+}
+
 .container{
     padding-top: 30px;
     padding-right: 206px;
