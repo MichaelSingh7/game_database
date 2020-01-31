@@ -12,6 +12,26 @@ body{
 
 }
 
+.picker__date-display {
+text-align: left;
+    background-color: #580a1c;
+    color: #fff;
+    padding: 18px;
+    font-weight: 300;
+}
+
+.material-icons {
+    color: white;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #580a1c;
+}    
+    
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #e5fffd;
+}    
+
 nav .brand-logo{
 position: absolute;
     color: #fff;
