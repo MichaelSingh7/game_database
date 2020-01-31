@@ -20,6 +20,19 @@ text-align: left;
     font-weight: 300;
 }
 
+.picker__close, .picker__today, .picker__clear {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    color: #580a1c;
+    
+}
+
+.picker__day.picker__day--today {
+    color: #e8000b;
+}
+
+
+
 .material-icons {
     color: white;
 }
@@ -61,6 +74,33 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 .select:hover{
     background-color:red;
 }
+
+.input-field .prefix.active{
+    color: #580a1c;
+}
+
+/* label focus color */
+ .input-field input:focus + label {
+   color:white !important;
+ }
+ /* label underline focus color */
+ .row .input-field input:focus {
+   border-bottom: 1px solid white !important;
+   box-shadow: 0 1px 0 0 white !important
+ }
+    
+    /* label focus color */
+    .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
+     color: white !important;
+    }
+
+/* label underline focus color */
+    .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
+     border-bottom: 1px solid white !important;
+     box-shadow: 0 1px 0 0 white !important;
+    }
+
+
 .dropdown-content li > a, .dropdown-content li > span {
     color: white !important;
     background-color: black;
