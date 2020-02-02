@@ -12,9 +12,21 @@ body{
 
 }
 
-.picker__select--month.browser-default {
+/* .picker__select--month.browser-default {
     background-color: white;
-}
+} 
+
+.picker__select--month.browser-default option:checked,
+.picker__select--year.browser-default option:checked,
+.picker__select--month.browser-default option:hover,
+.picker__select--year.browser-default option:hover,
+.picker__select--month.browser-default option:active,
+.picker__select--year.browser-default option:active,
+.picker__select--month.browser-default option:focus,
+.picker__select--year.browser-default option:focus {
+    background-color: #580A1C !important;
+    color: white !important;
+} */
 
 .picker__box {
     padding: 0px;
@@ -57,8 +69,13 @@ text-align: left;
 
 .material-icons {
     color: white;
+    
 }
 
+.expand_style {
+    color:white;
+    background-color: #b30505;
+}
 .switch label input[type=checkbox]:checked+.lever {
     background-color: #580a1c;
 }    
