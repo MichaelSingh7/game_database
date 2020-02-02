@@ -12,6 +12,10 @@ body{
 
 }
 
+.picker__select--month.browser-default {
+    background-color: white;
+}
+
 .picker__box {
     padding: 0px;
     border-radius: 48px;
