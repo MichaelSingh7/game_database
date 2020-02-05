@@ -28,6 +28,15 @@ body{
     color: white !important;
 } */
 
+
+
+.logos img {
+    position: absolute;
+    left: 129px;
+    top: 800px;
+    height: 80px;
+}
+
 .picker__box {
     padding: 0px;
     border-radius: 48px;
