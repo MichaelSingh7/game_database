@@ -30,12 +30,13 @@ body{
 
 
 
-.logos img {
-    position: absolute;
-    left: 129px;
-    top: 800px;
-    height: 80px;
+
+.page-footer {
+    padding-top: 20px;
+    color: #fff;
+    background-color: #b30505;
 }
+
 
 .picker__box {
     padding: 0px;
@@ -192,6 +193,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 .container{
     padding-top: 30px;
     padding-right: 206px;
+    margin-left:255px;
 }
 
 .container .row{
