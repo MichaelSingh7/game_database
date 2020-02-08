@@ -32,9 +32,11 @@ body{
 
 
 .page-footer {
-    padding-top: 20px;
+    padding-top: 0px;
     color: #fff;
-    background-color: #b30505;
+    background-color: #b30505c9;
+    margin-top: 352px;
+    margin-right: 3px;
 }
 
 
@@ -191,14 +193,21 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
 
 .container{
-    padding-top: 30px;
-    padding-right: 206px;
-    margin-left:255px;
+    padding-top: 11px;
+    padding-right: 319px;
+    margin-left: 301px;
 }
 
+
 .container .row{
-    margin-left: -.75rem;
-    margin-right: 1.25rem;
+    margin-left: -19.75rem;
+    margin-right: -15.75rem;
+}
+
+.light, .page-footer .footer-copyright {
+    font-weight: 300;
+    margin-left: -18.75rem;
+    margin-right: -19.75rem;
 }
 
 .collapsible-body{
