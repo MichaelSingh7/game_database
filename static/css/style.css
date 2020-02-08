@@ -2,6 +2,7 @@ body{
     background-color: white;
     /* The image used */
     background-image: url("../images/game.jpg");
+    margin-bottom: 230px;
 
     /* Full height */
     min-height: 100vh;    
@@ -193,9 +194,9 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
 
 .container{
-    padding-top: 11px;
+    padding-top: 18px;
     padding-right: 319px;
-    margin-left: 301px;
+    margin-left: 298px;
 }
 
 
