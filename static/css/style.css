@@ -31,14 +31,29 @@ body{
 
 
 
+.collapsible {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    margin: 5.5rem 0 1rem 0;
+    padding: 0px;
+}
+
 
 .page-footer {
     padding-top: 0px;
     color: #fff;
     background-color: #b30505c9;
-    margin-top: 352px;
-    margin-right: 3px;
+    bottom: -200px;
+    position: absolute;
+    bottom: -200px;
+    width: 100%;
+    height: 12.5rem;
+    left: 0px;
+    
 }
+
+
 
 
 .picker__box {
@@ -96,6 +111,13 @@ text-align: left;
 .switch label input[type=checkbox]:checked+.lever:after {
     background-color: #e5fffd;
 }    
+
+
+
+nav .nav-wrapper{
+    background-color: #b30505c9;
+    line-height: 40px;
+}
 
 nav .brand-logo{
 position: absolute;
@@ -197,10 +219,12 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     padding-top: 18px;
     padding-right: 319px;
     margin-left: 298px;
+    
+    
 }
 
 
-.container .row{
+.container.row{
     margin-left: -19.75rem;
     margin-right: -15.75rem;
 }
@@ -209,6 +233,8 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     font-weight: 300;
     margin-left: -18.75rem;
     margin-right: -19.75rem;
+    margin: -20px;
+    
 }
 
 .collapsible-body{
