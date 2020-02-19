@@ -184,7 +184,13 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 }
 
 .dropdown-content li > a, .dropdown-content li > span:hover {
-    background-color: #383bfb1f;
+    background-color: #b30505c9;
+    
+    
+}
+
+.dropdown-content li > a, .dropdown-content li > span:active {
+    background-color: white;
     
 }
 
@@ -219,7 +225,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 
 
 .container{
-    padding-top: 18px;
+    padding-top: 0px;
     padding-right: 319px;
     margin-left: 298px;
     

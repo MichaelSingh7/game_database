@@ -8,11 +8,13 @@
 </head>
 
 <body>
-
+<audio src="/music/Spider-Man (Movie Theme).mp3" autoplay>
+<p>If you are reading this, it is because your browser does not support the audio element.</p>
+</audio>
 <header>
     <nav>
         <div class="nav-wrapper">
-            <a href="{{url_for('get_reviews')}}" class="brand-logo right">Game Review + Dashboard</a>
+            <a href="{{url_for('get_reviews')}}" class="brand-logo right">Game Review +</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                     <li><a href="{{url_for('get_reviews')}}">Home</a></li>
