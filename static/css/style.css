@@ -42,6 +42,19 @@ body{
     padding: 0px;
 }
 
+@media (max-width: 1400px) {
+  .page-footer {
+    color: #fff;
+    background-color: #b30505c9;
+    bottom: 0px;
+    position: absolute;
+    height: 203px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: -247px;
+    text-align: center;
+}
+}
 
 .page-footer {
     color: #fff;
