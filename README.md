@@ -30,10 +30,29 @@ that would fill in to create a review. I made this possible by using sections fr
 _This link allows the user to add, edit and manipulate genre for the reviews. I had simply created a container which includes (<li>) which allowed me to create horizontal
 collapsible headers which contained two buttons; a delete, an edit button and an add genre button at the bottom of the page. For the edit genre and delete genre buttons
 I had to create two app routes and place them inside a ({{url_for}}) within the buttons I had created. For example, if you click on the delete genre button, it would jump
-back to the page showing all the genre, which would show the remaining genre that have been created.
+back to the page showing all the genre, which would show the remaining genre that have been created._
 
 
 ### Review sections
 
 _I have decided to use a collapsible accordian to allow the user to simply click and the section will reveal the review content, clicking again will
-simply hide the content. The sections do include buttons that will allow the user to delete the review showing or edit the review._
+simply hide the content. The sections do include buttons that will allow the user to delete the review showing or edit the review. I needed to pull through
+the names of the genre listed on my mongo db database, for that to be possible ({{genre.game_genre}}) by doing this it pullled through the names of the genre
+as game_genre is the name of the section of my database which includes the name of the genre._
+
+## Credits
+
+_All the review content and images have been used for the purpose of this project created and I do not 
+take credit for any of the content. For my game review project I have used images to form the background, and
+the content for the basis of the reviews you can see._
+
+## Backgrounds
+
+
+
+
+
+
+# Technologies
+
+# TESTING
