@@ -47,12 +47,33 @@ take credit for any of the content. For my game review project I have used image
 the content for the basis of the reviews you can see._
 
 ## Backgrounds
-
-
-
-
-
+_I had looked a number of background that would naturally fit with colour scheme I have chosen for my game 
+database project. However, this did not work out as the text would not align or the image would conflict with 
+the footer. In the end I came across the current background image by searching the image in https://www.google.com/
+, this generated a number of images. I selected the image and it bought me to 
+(https://wallpapersmug.com/w/download/1080x1920/jump-spider-man-in-avengers-infinity-war-0419d1).
+I saved the image by right clicking, and saved to my directory on my computer I am using. The Credits
+go the site as this image used just for project purpose._
 
 # Technologies
+
+#### HTML
+_The html used in my project was to create the links for the sections in my project such as (home, manage genre and
+add review). I used this mainly the structure of my buttons, the labels such as the name of the buttons and the
+footer you seen on all of the pages. I have used to for my scripts in my (base.html) so that means the pages I 
+have created will have them scripts as they have been extended using ({% extends 'base.html'%} {% block content %})
+. Also, within my (nav-wrapper) I used a class with (brand logo-right) so I could use text as a logo right of my page.
+I have the html code to structure my page, to form the basis of my pages 
+
+#### HTML Validator 
+
+_I used this html validator to check my code and make sure I do not have any syntax errors. The validator
+helped me as I found that syntax errors can appear over just even a small mistake such as, a letter or symbol
+iI did find this difficult at
+the start as my code wouldn't function until I fixed the code. Whenever, I tried to fix the code I found it was always
+a typo somewhere which was causing me problems. However, the main issue was my divs were closed properly or I had 
+child elements closed after the parent. In the end fixing this helped me gain a better understanding of my code._
+
+#### CSS Validator 
 
 # TESTING
