@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: black;
     /* The image used */
     background-image: url("../images/game.jpg");
     
@@ -10,28 +10,15 @@ body{
     margin-bottom: 230px; 
 
     /* Center and scale the image nicely */
-    background-position: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
-/* .picker__select--month.browser-default {
-    background-color: white;
-} 
-
-.picker__select--month.browser-default option:checked,
-.picker__select--year.browser-default option:checked,
-.picker__select--month.browser-default option:hover,
-.picker__select--year.browser-default option:hover,
-.picker__select--month.browser-default option:active,
-.picker__select--year.browser-default option:active,
-.picker__select--month.browser-default option:focus,
-.picker__select--year.browser-default option:focus {
-    background-color: #580A1C !important;
-    color: white !important;
-} */
-
+h3 {
+    color:white;
+}
 
 
 #first{
@@ -64,7 +51,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     color: #fff;
     background-color: #b30505c9;
     position: fixed;
-    height: 180px;
+    height: 168px;
     left: 0px;
     right: 0px;
     text-align: center;
