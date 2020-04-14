@@ -137,3 +137,10 @@ so they are submitted. After I have gone past first two stages, I would enter ("
 I just had to push it online using command ("git push"). Now as I wanted to push the whole project online, I went to my github page where my 
 repository was saved and clicked settings in the top of the page. After this I went to github pages and within there I selected source, as that had
 a dropdown which was called master branch. Once I did this a green section appeared Your site is published at and this allows you to now access the project._
+
+#### Gitpod
+
+_For my project I have been using gitpod to create the project, and to commiting the code onto my github. I did find it easy as I used the code (git push),
+it pushed my code instantly without having to enter my username and password. This ide is what allowed to create the code, create pages and folders which
+really form my project. I did come across the difficulty as when it timed and I had to refresh the page, I was losing the all the code I had not previously
+entered. This was difficult but I way I worked around this was simply (git commit -m "Enter Commit Here), this stopped me losing my code and it saved it for me._
