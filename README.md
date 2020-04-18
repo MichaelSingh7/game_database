@@ -144,3 +144,5 @@ _For my project I have been using gitpod to create the project, and to commiting
 it pushed my code instantly without having to enter my username and password. This ide is what allowed to create the code, create pages and folders which
 really form my project. I did come across the difficulty as when it timed and I had to refresh the page, I was losing the all the code I had not previously
 entered. This was difficult but I way I worked around this was simply (git commit -m "Enter Commit Here), this stopped me losing my code and it saved it for me._
+
+# Created and Edited by Michael Singh

@@ -13,8 +13,13 @@ body{
     background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+
+    
     
 }
+
+
+
 
 h3 {
     color:white;
@@ -31,6 +36,29 @@ h3 {
     border-left: 1px solid #ddd;
     margin: 5.5rem 0 1rem 0;
     padding: 0px;
+}
+
+nav .nav-wrapper{
+    background-color: #b30505c9;
+    line-height: 40px;
+}
+
+nav .brand-logo{
+position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.1rem;
+    padding: 0;
+}
+
+nav .brand-logo.right{
+right: 2.5rem;
+    padding: 0;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 50px;
+    line-height: 64px;
 }
 
 nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
@@ -119,30 +147,6 @@ text-align: left;
 }    
 
 
-
-nav .nav-wrapper{
-    background-color: #b30505c9;
-    line-height: 40px;
-}
-
-nav .brand-logo{
-position: absolute;
-    color: #fff;
-    display: inline-block;
-    font-size: 1.1rem;
-    padding: 0;
-}
-
-nav .brand-logo.right{
-right: 2.5rem;
-    padding: 0;
-}
-
-nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-    height: 50px;
-    line-height: 64px;
-}
-
 .row{
     color:white;
 }
@@ -227,19 +231,7 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
 }
 
 
-/*.container{
-    padding-top: 0px;
-    padding-right: 319px;
-    margin-left: 298px;
-    
-    
-}
 
-
-.container.row{
-    margin-left: -19.75rem;
-    margin-right: -15.75rem;
-}*/
 
 .light, .page-footer .footer-copyright {
     font-weight: 300;
@@ -292,15 +284,3 @@ nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
     background-color: black;
 }
 
-.bg{
-    /* The image used */
-  background-image: url("../images/game.jpg");
-
-  /* Full height */
-  
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
