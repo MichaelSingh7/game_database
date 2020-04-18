@@ -145,4 +145,14 @@ it pushed my code instantly without having to enter my username and password. Th
 really form my project. I did come across the difficulty as when it timed and I had to refresh the page, I was losing the all the code I had not previously
 entered. This was difficult but I way I worked around this was simply (git commit -m "Enter Commit Here), this stopped me losing my code and it saved it for me._
 
+#### Heroku
+
+_I created an app on Heroku to access my content. This is something I did by logging onto (https://www.heroku.com), once I logged on I created an app.
+In the top right corner there is a button called new, once clicked the create new app. This gives two options, one is app name and this allows you to name
+your app. The other, choose a region and I chose Europe. Once your app is created, you will see a personal title in top left and underneath it will list your 
+apps. The app name should be listed below for you to click on, you will see some options and if you click on settings that will let you make the changes. To set up
+my port, I clicked on (Reveal Config Vars) it will give you and I create my (IP: 0.0.0.0 and Port: 5000). I had then had to scroll to top of page and click on Deployment
+, this will let you choose the method of Deployment, I have chosen github as this will link my content with the repository I have saved on github.
+As you scroll down you choose to automatic deploy, allowing any code pushed to be deployed automatically. I did some across an error and this was because I needed to create 
+a requirements file. I created this by using command 
 # Created and Edited by Michael Singh
