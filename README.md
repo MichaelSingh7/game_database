@@ -155,4 +155,5 @@ my port, I clicked on (Reveal Config Vars) it will give you and I create my (IP:
 , this will let you choose the method of Deployment, I have chosen github as this will link my content with the repository I have saved on github.
 As you scroll down you choose to automatic deploy, allowing any code pushed to be deployed automatically. I did some across an error and this was because I needed to create 
 a requirements file. I created this by using command 
+
 # Created and Edited by Michael Singh
